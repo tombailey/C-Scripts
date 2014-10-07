@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 unsigned int fact(unsigned int n) {
-	return (n == 0 || n == 1) ? 1 : n * fact(n-1);
+	return (n == 0) ? 1 : n * fact(n-1);
 }
 
 int main(void) {

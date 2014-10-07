@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fibo(int n) {
+unsigned int fibo(unsigned int n) {
 	return (n == 1 || n == 2) ? 1 : fibo(n-1) + fibo(n-2);
 }
 
@@ -10,7 +10,7 @@ int main(void) {
 	unsigned int n;
 	scanf("%u", &n);
 
-	printf("Fibo %u is %d", n, fibo(n));
+	printf("Fibo %u is %u", n, fibo(n));
 
 	return 0;
 }
